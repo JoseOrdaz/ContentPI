@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "ts-node-dev src/index.ts",
     "start": "ts-node dist/index.js",
+    "api": "pm2 start processes.json",
     "build": "tsc -p .",
     "lint": "eslint . --ext .js,.tsx,.ts",
     "test": "jest src"
@@ -53,10 +54,12 @@
     "dotenv": "^8.2.0",
     "express": "4.17.1",
     "fogg-utils": "2.7.5",
+    "graphql-import": "^1.0.2",
     "jsonwebtoken": "8.5.1",
     "mysql2": "^2.2.5",
     "pg": "8.4.2",
     "pg-hstore": "2.3.3",
+    "pm2": "^4.5.0",
     "sequelize": "5.22.3",
     "sequelize-typescript": "1.1.0",
     "ts-node": "9.0.0"
